@@ -268,7 +268,7 @@ public class LinkedListTest {
 
     @Test(expected = IndexOutOfBoundsException.class)
     public void testClearRemovesElements() {
-        intList = LinkedList.of(4, 5, 6);
+        intList = LinkedList.of(4, 5, 6,7);
 
         intList.clear();
         intList.get(0);
