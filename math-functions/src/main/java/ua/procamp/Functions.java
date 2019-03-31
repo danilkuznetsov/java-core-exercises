@@ -16,6 +16,12 @@ public class Functions {
 
         // todo: add simple functions to the function map (abs, sng, increment, decrement, square)
 
+        intFunctionMap.addFunction("abs", Math::abs);
+        intFunctionMap.addFunction("sgn", i -> i > 0 ? 1 : i == 0 ? 0 : -1);
+        intFunctionMap.addFunction("increment", i -> i + 1);
+        intFunctionMap.addFunction("decrement", i -> i - 1);
+        intFunctionMap.addFunction("square", i -> i * i);
+
         return intFunctionMap;
     }
 }
